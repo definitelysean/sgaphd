@@ -1,0 +1,19 @@
+Package: sgaphd
+Title: Sean Gets A PhD: Research Convenience Functions
+Version: 0.0.0.9
+Authors@R: person("Sean", "Corbett", email = "scorbett@bu.edu", role = c("aut",
+    "cre"))
+Description: This is a silly package of convenience functions for using
+    heatmap3, running t-tests on microarray, and other repetitive tasks Sean
+    identifies in his PhD thesis work. It probably will not be of use to
+    anybody else ever.
+Depends:
+    R (>= 3.2.1)
+License: MIT
+LazyData: true
+Imports:
+    multtest,
+    Biobase,
+    BiocGenerics
+Collate:
+    't-testing.R'
