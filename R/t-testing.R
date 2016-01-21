@@ -11,8 +11,8 @@ microarray.t.test <- function(class.labels, dataset, test.type="t.equalvar") {
   df <- (ncol(dataset) - 2)
   pval <- 2*(1-pt(abs(tval),df))
   fdr <- p.adjust(pval, method="fdr")
-  res.all <- data.frame(I(rownames(dataset)), pval, fdr)
-  colnames(res.all) <- c("gene.id", "pval", "fdr")
+  res.all <- data.frame(I(rownames(dataset)), tval, pval, fdr)
+  colnames(res.all) <- c("gene.id", "tval", "pval", "fdr")
   return(res.all)
 }
 #TODO: Example; just generate a small fake gene expression matrix & some class labels.
