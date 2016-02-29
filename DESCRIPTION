@@ -1,6 +1,6 @@
 Package: sgaphd
 Title: Sean Gets A PhD: Research Convenience Functions
-Version: 0.0.0.10
+Version: 0.0.0.11
 Authors@R: person("Sean", "Corbett", email = "scorbett@bu.edu", role = c("aut",
     "cre"))
 Description: This is a silly package of convenience functions for using
