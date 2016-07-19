@@ -9,6 +9,7 @@
 #' @param sample.colors Colors for each sample (column) to be plotted
 #' @param title.addition A subtitle to put under the main title ("Principle Components Analysis (PCA)")
 #' @keywords prcomp pca
+#' @return The results from prcomp()
 #' @export
 make.pca <- function(expression.matrix, sample.labels, sample.colors=c(), title.addition="") {
     pca.res <- prcomp(na.omit(t(scale(t(expression.matrix)))), center=FALSE, scale=FALSE);
@@ -24,5 +25,7 @@ make.pca <- function(expression.matrix, sample.labels, sample.colors=c(), title.
     
     # Write the sample labels over the points
     text(x=pca.res$rotation[,"PC1"], y=pca.res$rotation[,"PC2"], cex=0.7, col="black", labels=sample.labels);
+    
+    return(pca.res)
 }
 #TODO: Example
