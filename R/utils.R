@@ -25,5 +25,5 @@ notebookTimestamp <- function() {
 #' @param title The filename to output
 #' @export
 figureFilename <- function(title) {
-    return(paste(notebookTimestamp(), title))
+    return(paste(notebookTimestamp(), title, sep="_"))
 }
