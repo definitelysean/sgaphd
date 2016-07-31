@@ -7,7 +7,7 @@
 get_msigdb_gene_set(gene.set.name)
 }
 \arguments{
-\item{gene.set.name}{The name of the gene set for which to find gene IDs}
+\item{gene.set.name}{The name (in whole, or part!) of the gene set for which to find gene IDs}
 }
 \value{
 The MSigDB gene set's Entrez IDs, as a character vector. Or, a list of gene sets, if there were multiple matches. The leading part of each result gene set (the portion before the '.') indicates which gene set collection the gene set was found in.

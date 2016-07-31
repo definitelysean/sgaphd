@@ -16,6 +16,9 @@ make.pca(expression.matrix, sample.labels, sample.colors = c(),
 
 \item{title.addition}{A subtitle to put under the main title ("Principle Components Analysis (PCA)")}
 }
+\value{
+The results from prcomp()
+}
 \description{
 This function is a wrapper for plotting results from prcomp. It takes a matrix of expression values, and some extra
 info to color and label the individual points (which are presumed to be samples in a gene expression experiment for
